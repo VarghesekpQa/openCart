@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-05T12:15:54 IST" name="opencart" finished-at="2022-03-05T12:16:34 IST" duration-ms="39611">
+    <groups>
+    </groups>
+    <test started-at="2022-03-05T12:15:54 IST" name="opencart webapp" finished-at="2022-03-05T12:16:34 IST" duration-ms="39611">
+      <class name="com.opencart.testcases.tc_002_login_dtd">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@4facf68f]" started-at="2022-03-05T12:15:54 IST" name="setup" finished-at="2022-03-05T12:15:59 IST" duration-ms="4621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@4facf68f]" started-at="2022-03-05T12:16:00 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-05T12:16:17 IST" duration-ms="16979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zxccxz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDtd -->
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@4facf68f]" started-at="2022-03-05T12:16:17 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-05T12:16:25 IST" duration-ms="8210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qweewq@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9834567890]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDtd -->
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@4facf68f]" started-at="2022-03-05T12:16:25 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-05T12:16:34 IST" duration-ms="8156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asddsa@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6734567890]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDtd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@4facf68f]" started-at="2022-03-05T12:16:34 IST" name="tearDown" finished-at="2022-03-05T12:16:34 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_002_login_dtd -->
+    </test> <!-- opencart webapp -->
+  </suite> <!-- opencart -->
+</testng-results>
