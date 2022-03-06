@@ -7,7 +7,6 @@ import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import com.opencart.pages.loginPage;
-import com.opencart.utilities.helper;
 
 public class tc_001_login extends baseClass {
 
@@ -19,21 +18,28 @@ public class tc_001_login extends baseClass {
 		loginPage lp = new loginPage(driver);
 		
 		lp.clickLogin();
+		logger.info("login link clicked...");
 		
 		lp.setEmail(email);
+		logger.info("email entered...");
+		
 		lp.setPassword(pass);
+		logger.info("password entered...");
 		Thread.sleep(3000);
 		
 		lp.clickLoginButton();
+		logger.info("login button clicked...");
 		
-		if(driver.getTitle().equals("My Accounttt")) {
+		if(driver.getTitle().equals("My Account")) {
 			
 			Assert.assertTrue(true);
+			logger.info("testcase passed...");
 			Thread.sleep(3000);
 			
 		}else {
-			//captureScreenshot("login");
+			
 			Assert.assertTrue(false);
+			logger.info("testcase failed...");
 		}	
 	}
 	
@@ -42,7 +48,4 @@ public class tc_001_login extends baseClass {
 		
 		throw new SkipException("Skipping this exception");
 	}
-	
-	
-	
 }

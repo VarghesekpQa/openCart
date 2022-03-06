@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Mar 5, 2022 11:47:03 am</span>
+                    <span class="badge badge-primary">Mar 6, 2022 11:26:29 am</span>
                 </a>
             </li>
         </ul>
@@ -101,7 +101,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -114,28 +114,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="skip" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar skip-bg">
-						<i class="fa fa-long-arrow-right text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">loginDtd</p>
-							<p class="duration text-sm">0h 0m 0s+10ms</p>
-							<span class="datetime">11:47:17 am</span>
+							<p class="name">login</p>
+							<p class="duration text-sm">0h 0m 9s+16ms</p>
+							<span class="datetime">11:26:33 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-skip">loginDtd</h5>
-									<span class='badge badge-success'>03.05.2022 11:47:17</span>
-									<span class='badge badge-danger'>03.05.2022 11:47:17</span>
-									<span class='badge badge-default'>0h 0m 0s+10ms</span>
+									<h5 class="test-status text-fail">login</h5>
+									<span class='badge badge-success'>03.06.2022 11:26:33</span>
+									<span class='badge badge-danger'>03.06.2022 11:26:42</span>
+									<span class='badge badge-default'>0h 0m 9s+16ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -151,48 +151,34 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:26:42 am</td>
 				<td>
-						<span class='badge white-text orange'>loginDtd</span>
+						<span class='badge white-text red'>login - testcase failed</span>
 				</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:26:42 am</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 8.556
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'LAPTOP-BKNNN7A8', ip: '192.168.43.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a7b93b9729065bc48215ad64ede37f9, get {url=https://demo.opencart.com/index.php?route=common/home}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\varghese\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49742}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49742/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a7b93b9729065bc48215ad64ede37f9
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
-	at com.opencart.testcases.baseClass.setup(baseClass.java:59)
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.opencart.testcases.tc_001_login.login(tc_001_login.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:766)
 	at org.testng.TestRunner.run(TestRunner.java:587)
@@ -214,6 +200,11 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\Software Testing\HybridTdd\Opencart\screenshots\login2022.03.06.11.26.42.png' src='D:\Software Testing\HybridTdd\Opencart\screenshots\login2022.03.06.11.26.42.png'>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -226,19 +217,19 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">loginDtd</p>
-							<p class="duration text-sm">0h 0m 0s+3ms</p>
-							<span class="datetime">11:47:17 am</span>
+							<p class="name">login2</p>
+							<p class="duration text-sm">0h 0m 0s+2ms</p>
+							<span class="datetime">11:26:42 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-skip">loginDtd</h5>
-									<span class='badge badge-success'>03.05.2022 11:47:17</span>
-									<span class='badge badge-danger'>03.05.2022 11:47:17</span>
-									<span class='badge badge-default'>0h 0m 0s+3ms</span>
+									<h5 class="test-status text-skip">login2</h5>
+									<span class='badge badge-success'>03.06.2022 11:26:42</span>
+									<span class='badge badge-danger'>03.06.2022 11:26:42</span>
+									<span class='badge badge-default'>0h 0m 0s+2ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -255,150 +246,29 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
+				<td>11:26:42 am</td>
 				<td>
-						<span class='badge white-text orange'>loginDtd</span>
+						<span class='badge white-text orange'>login2</span>
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
+				<td>11:26:42 am</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 8.556
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'LAPTOP-BKNNN7A8', ip: '192.168.43.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a7b93b9729065bc48215ad64ede37f9, get {url=https://demo.opencart.com/index.php?route=common/home}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\varghese\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49742}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49742/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a7b93b9729065bc48215ad64ede37f9
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
-	at com.opencart.testcases.baseClass.setup(baseClass.java:59)
+						<textarea disabled class="code-block">org.testng.SkipException: Skipping this exception
+	at com.opencart.testcases.tc_001_login.login2(tc_001_login.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="skip" test-id="3"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar skip-bg">
-						<i class="fa fa-long-arrow-right text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">loginDtd</p>
-							<p class="duration text-sm">0h 0m 0s+3ms</p>
-							<span class="datetime">11:47:17 am</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-skip">loginDtd</h5>
-									<span class='badge badge-success'>03.05.2022 11:47:17</span>
-									<span class='badge badge-danger'>03.05.2022 11:47:17</span>
-									<span class='badge badge-default'>0h 0m 0s+3ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
-				<td>
-						<span class='badge white-text orange'>loginDtd</span>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>11:47:17 am</td>
-				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 8.556
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'LAPTOP-BKNNN7A8', ip: '192.168.43.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a7b93b9729065bc48215ad64ede37f9, get {url=https://demo.opencart.com/index.php?route=common/home}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\varghese\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49742}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49742/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a7b93b9729065bc48215ad64ede37f9
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
-	at com.opencart.testcases.baseClass.setup(baseClass.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:766)
 	at org.testng.TestRunner.run(TestRunner.java:587)
@@ -453,7 +323,7 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">1</span>
+					<span class="badge badge-primary">2</span>
 					</a>
 				</li>
 			</ul>
@@ -463,13 +333,48 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.TimeoutException</p>
-							<p class="duration text-sm">3 tests</p>
+							<p class="name">java.lang.AssertionError</p>
+							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.TimeoutException</h4>
+							<h4>java.lang.AssertionError</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>11:26:33 am</td>
+									<td class='linked' test-id='1'>
+										login
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.testng.SkipException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.testng.SkipException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -486,31 +391,9 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 											<i class="fa fa-long-arrow-right text-white"></i>
 										</div>
 									</td>
-									<td>11:47:17 am</td>
-									<td class='linked' test-id='1'>
-										loginDtd
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar skip-bg'>
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</div>
-									</td>
-									<td>11:47:17 am</td>
+									<td>11:26:42 am</td>
 									<td class='linked' test-id='2'>
-										loginDtd
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar skip-bg'>
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</div>
-									</td>
-									<td>11:47:17 am</td>
-									<td class='linked' test-id='3'>
-										loginDtd
+										login2
 									</td>
 								</tr>
 							</tbody>
@@ -553,8 +436,8 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
-						<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
+						<small data-tooltip='50%'><b>1</b> tests failed, 
+						<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -573,8 +456,8 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 				<div class="card-footer">
 					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
-						<b data-tooltip='100%'>6</b> others
+						<small data-tooltip='50%'><b>2</b> events failed, 
+						<b data-tooltip='50%'>2</b> others
 						</small>
 					</div>
 				</div>
@@ -588,7 +471,7 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">3</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
 							<span>.00%</span>
@@ -607,7 +490,7 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Mar 5, 2022 11:47:03 am</h4>
+							<h4 class="font-weight-light mt-4">Mar 6, 2022 11:26:29 am</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -623,7 +506,7 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 13s+662ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 13s+943ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -684,14 +567,14 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 3,
+	    parentCount: 2,
 		passParent: 0,
-		failParent: 0,
+		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
-		skipParent: 3,
-		exceptionsParent: 3,
+		skipParent: 1,
+		exceptionsParent: 2,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -712,13 +595,13 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 6,
+		eventsCount: 4,
 		passEvents: 0,
-		failEvents: 0,
+		failEvents: 2,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 6,
+		skipEvents: 2,
 		infoEvents: 0,
 		debugEvents: 0,
 		exceptionsEvents: 0
@@ -726,7 +609,7 @@ Session ID: 8a7b93b9729065bc48215ad64ede37f9
 </script>
 <script>
 	var timeline = {
-	        "loginDtd":0.01,"loginDtd":0.003,"loginDtd":0.003
+	        "login":9.016,"login2":0.002
 	};
 </script>
                 </div>

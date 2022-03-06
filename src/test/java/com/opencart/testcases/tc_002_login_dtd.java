@@ -20,38 +20,55 @@ public class tc_002_login_dtd extends baseClass {
 		loginPage lp = new loginPage(driver);
 		
 		lp.clickLogin();
+		logger.info("login link cliked...");
 		
 		lp.setEmail(em);
+		logger.info("email entered...");
+		
 		lp.setPassword(ps);
+		logger.info("password entered...");
 		Thread.sleep(3000);
 		
 		lp.clickLoginButton();
+		logger.info("login button clicked...");
 		
 		if(exp.equals("valid")) {
 			
 			if(driver.getTitle().equals("My Account")) {
 		
 				Assert.assertTrue(true);
+				logger.info("testcase passed...");
 				Thread.sleep(3000);
 				
 				lp.clickOnMyAccount();
+				logger.info("click on Myaccount menu...");
+				
 				lp.clickLogoutButton();
+				logger.info("click on logout button...");
+				
 				lp.clickLogoutContinueButton();
+				logger.info("click on continue button...");
 				
 			}else {
-				//captureScreenshot("login");
+				
 				Assert.assertTrue(false);
+				logger.info("testcase failed...");
 			}	
 		} else if(exp.equals("invalid")) {
 			if(driver.getPageSource().contains("Warning: No match for E-Mail Address and/or Password.")) {
 				
 				Assert.assertTrue(true);
-		
+				logger.info("testcase passed...");
 			}else {
-				//captureScreenshot("login");
+			
 				Assert.assertTrue(false);
+				logger.info("testcase failed...");
+				
 				lp.clickLogoutButton();
+				logger.info("click on logout button...");
+				
 				lp.clickLogoutContinueButton();
+				logger.info("click on continue button...");
 			}
 		}	
 	}

@@ -7,9 +7,8 @@
 	<test name="opencart webapp">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<!-- <class name="com.opencart.testcases.tc_001_login"/> -->
-			<class name="com.opencart.testcases.tc_002_login_dtd"/>
-			
+			 <class name="com.opencart.testcases.tc_001_login"/> 
+			 <!-- <class name="com.opencart.testcases.tc_002_login_dtd"/> -->
 		</classes>
 	</test>
 </suite>
