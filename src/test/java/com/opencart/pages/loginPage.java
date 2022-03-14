@@ -38,6 +38,10 @@ public class loginPage {
 	@FindBy(xpath="//a[@class='btn btn-primary']")
 	WebElement logoutContinueButton;
 
+	public void clickMyaccount() {
+		myAccount.click();
+	}
+	
 	public void clickLogin() {	
 		myAccount.click();
 		login.click();

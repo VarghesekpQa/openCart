@@ -10,7 +10,7 @@ import com.opencart.pages.loginPage;
 
 public class tc_001_login extends baseClass {
 
-	@Test
+	@Test(priority=0)
 	public void login() throws InterruptedException, IOException {
 		
 		driver.get(baseUrl);
@@ -41,11 +41,5 @@ public class tc_001_login extends baseClass {
 			Assert.assertTrue(false);
 			logger.info("testcase failed...");
 		}	
-	}
-	
-	@Test
-	public void login2() throws InterruptedException {
-		
-		throw new SkipException("Skipping this exception");
 	}
 }

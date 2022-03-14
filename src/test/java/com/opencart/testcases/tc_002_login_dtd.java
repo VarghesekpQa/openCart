@@ -12,7 +12,7 @@ import com.opencart.utilities.xlUtils;
 public class tc_002_login_dtd extends baseClass {
 	
 	
-	@Test(dataProvider="loginData")
+	@Test(dataProvider="loginData",priority=1)
 	public void loginDtd(String em,String ps,String exp) throws InterruptedException {
 		
 		driver.get(baseUrl);

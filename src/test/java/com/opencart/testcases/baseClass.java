@@ -3,8 +3,6 @@ package com.opencart.testcases;
 import java.io.IOException;
 import java.time.Duration;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,6 +12,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.opencart.utilities.readConfig;
+
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class baseClass {
 	
@@ -25,14 +27,13 @@ public class baseClass {
 	String email = rc.getEmail();
 	String pass = rc.getPassword();
 	
-	
 	@Parameters({"browser"})
 	@BeforeClass
 	public void setup(String br) throws IOException {
 		
 		logger = Logger.getLogger("openCart");
 		
-		PropertyConfigurator.configure("log4j.properties");
+		PropertyConfigurator.configure("./log4j.properties");
 		
 		if(br.equals("chrome")) {
 			
@@ -45,13 +46,13 @@ public class baseClass {
 			
 			System.setProperty("webdriver.gecko.driver", rc.getFirefox());
 			driver = new FirefoxDriver();
-			logger.info("chrome browser is starting...");
+			logger.info("firefox browser is starting...");
 			
 		}else if(br.equals("ie")) {
 			
 			System.setProperty("webdriver.ie.driver", rc.getIe());
 			driver = new InternetExplorerDriver();	
-			logger.info("chrome browser is starting...");
+			logger.info("ie browser is starting...");
 			
 		}
 	

@@ -7,9 +7,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.opencart.testcases.baseClass;
 
 public class helper {
 	
@@ -29,4 +34,22 @@ public class helper {
 	
 		return dest;
 	}
+	
+	
+	public static String randomStringUtils() {
+		
+		String radomString = RandomStringUtils.randomAlphabetic(12).toLowerCase();
+		return radomString;
+	}
+	
+	public static WebElement productXpathBuilder(WebDriver driver, String pname) {
+		
+	
+		WebElement product = driver.findElement(By.xpath("//img[@title='"+pname+"']"));
+		
+		return product;
+	}
 }
+
+
+

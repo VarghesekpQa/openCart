@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-06T13:14:13 IST" name="opencart" finished-at="2022-03-06T13:14:52 IST" duration-ms="38165">
+  <suite started-at="2022-03-14T09:39:09 IST" name="opencart" finished-at="2022-03-14T09:40:49 IST" duration-ms="100430">
     <groups>
     </groups>
-    <test started-at="2022-03-06T13:14:13 IST" name="opencart webapp" finished-at="2022-03-06T13:14:52 IST" duration-ms="38165">
-      <class name="com.opencart.testcases.tc_002_login_dtd">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@7722c3c3]" started-at="2022-03-06T13:14:14 IST" name="setup" finished-at="2022-03-06T13:14:18 IST" duration-ms="4387" status="PASS">
+    <test started-at="2022-03-14T09:39:09 IST" name="opencart webapp" finished-at="2022-03-14T09:40:49 IST" duration-ms="100430">
+      <class name="com.opencart.testcases.tc_005_searchProduct">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_005_searchProduct@2c767a52]" started-at="2022-03-14T09:40:25 IST" name="setup" finished-at="2022-03-14T09:40:28 IST" duration-ms="2654" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,116 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@7722c3c3]" started-at="2022-03-06T13:14:19 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-06T13:14:35 IST" duration-ms="16017" status="PASS">
+        <test-method signature="searchProductWithValidName()[pri:4, instance:com.opencart.testcases.tc_005_searchProduct@2c767a52]" started-at="2022-03-14T09:40:28 IST" name="searchProductWithValidName" finished-at="2022-03-14T09:40:29 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductWithValidName -->
+        <test-method signature="searchProductWithInvalidName()[pri:5, instance:com.opencart.testcases.tc_005_searchProduct@2c767a52]" started-at="2022-03-14T09:40:29 IST" name="searchProductWithInvalidName" finished-at="2022-03-14T09:40:31 IST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductWithInvalidName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_005_searchProduct@2c767a52]" started-at="2022-03-14T09:40:31 IST" name="tearDown" finished-at="2022-03-14T09:40:31 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_005_searchProduct -->
+      <class name="com.opencart.testcases.tc_004_logout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_004_logout@130161f7]" started-at="2022-03-14T09:40:09 IST" name="setup" finished-at="2022-03-14T09:40:15 IST" duration-ms="5839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="logOut()[pri:3, instance:com.opencart.testcases.tc_004_logout@130161f7]" started-at="2022-03-14T09:40:15 IST" name="logOut" finished-at="2022-03-14T09:40:25 IST" duration-ms="9489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_004_logout@130161f7]" started-at="2022-03-14T09:40:25 IST" name="tearDown" finished-at="2022-03-14T09:40:25 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_004_logout -->
+      <class name="com.opencart.testcases.tc_006_productDescription">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_006_productDescription@619713e5]" started-at="2022-03-14T09:40:31 IST" name="setup" finished-at="2022-03-14T09:40:34 IST" duration-ms="2648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="productDecription()[pri:6, instance:com.opencart.testcases.tc_006_productDescription@619713e5]" started-at="2022-03-14T09:40:34 IST" name="productDecription" finished-at="2022-03-14T09:40:38 IST" duration-ms="3795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDecription -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_006_productDescription@619713e5]" started-at="2022-03-14T09:40:38 IST" name="tearDown" finished-at="2022-03-14T09:40:38 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_006_productDescription -->
+      <class name="com.opencart.testcases.tc_001_login">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_001_login@3c407114]" started-at="2022-03-14T09:39:09 IST" name="setup" finished-at="2022-03-14T09:39:13 IST" duration-ms="4005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:com.opencart.testcases.tc_001_login@3c407114]" started-at="2022-03-14T09:39:13 IST" name="login" finished-at="2022-03-14T09:39:26 IST" duration-ms="12773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_001_login@3c407114]" started-at="2022-03-14T09:39:26 IST" name="tearDown" finished-at="2022-03-14T09:39:26 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_001_login -->
+      <class name="com.opencart.testcases.tc_007_addToCart">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_007_addToCart@708f5957]" started-at="2022-03-14T09:40:38 IST" name="setup" finished-at="2022-03-14T09:40:41 IST" duration-ms="2633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCart()[pri:7, instance:com.opencart.testcases.tc_007_addToCart@708f5957]" started-at="2022-03-14T09:40:41 IST" name="addToCart" finished-at="2022-03-14T09:40:49 IST" duration-ms="8142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_007_addToCart@708f5957]" started-at="2022-03-14T09:40:49 IST" name="tearDown" finished-at="2022-03-14T09:40:49 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_007_addToCart -->
+      <class name="com.opencart.testcases.tc_002_login_dtd">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@35ef1869]" started-at="2022-03-14T09:39:26 IST" name="setup" finished-at="2022-03-14T09:39:29 IST" duration-ms="2729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.opencart.testcases.tc_002_login_dtd@35ef1869]" started-at="2022-03-14T09:39:30 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-14T09:39:45 IST" duration-ms="15519" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDtd -->
-        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@7722c3c3]" started-at="2022-03-06T13:14:35 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-06T13:14:43 IST" duration-ms="7978" status="PASS">
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.opencart.testcases.tc_002_login_dtd@35ef1869]" started-at="2022-03-14T09:39:45 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-14T09:39:53 IST" duration-ms="7465" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +169,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDtd -->
-        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@7722c3c3]" started-at="2022-03-06T13:14:43 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-06T13:14:51 IST" duration-ms="7988" status="PASS">
+        <test-method signature="loginDtd(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.opencart.testcases.tc_002_login_dtd@35ef1869]" started-at="2022-03-14T09:39:53 IST" name="loginDtd" data-provider="loginData" finished-at="2022-03-14T09:40:00 IST" duration-ms="7474" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,11 +190,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDtd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@7722c3c3]" started-at="2022-03-06T13:14:51 IST" name="tearDown" finished-at="2022-03-06T13:14:52 IST" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_002_login_dtd@35ef1869]" started-at="2022-03-14T09:40:00 IST" name="tearDown" finished-at="2022-03-14T09:40:01 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.testcases.tc_002_login_dtd -->
+      <class name="com.opencart.testcases.tc_003_register">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.tc_003_register@c33b74f]" started-at="2022-03-14T09:40:01 IST" name="setup" finished-at="2022-03-14T09:40:03 IST" duration-ms="2728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="register()[pri:2, instance:com.opencart.testcases.tc_003_register@c33b74f]" started-at="2022-03-14T09:40:03 IST" name="register" finished-at="2022-03-14T09:40:09 IST" duration-ms="5781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.tc_003_register@c33b74f]" started-at="2022-03-14T09:40:09 IST" name="tearDown" finished-at="2022-03-14T09:40:09 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.tc_003_register -->
     </test> <!-- opencart webapp -->
   </suite> <!-- opencart -->
 </testng-results>

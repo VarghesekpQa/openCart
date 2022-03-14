@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="opencart">
+<suite name="opencart" parallel="tests" thread-count="2">
 	<listeners>
 		<listener class-name="com.opencart.utilities.reporting"/>
 	</listeners>
@@ -8,7 +8,13 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			 <class name="com.opencart.testcases.tc_001_login"/> 
-			 <!-- <class name="com.opencart.testcases.tc_002_login_dtd"/> -->
+			 <class name="com.opencart.testcases.tc_002_login_dtd"/>
+			 <class name="com.opencart.testcases.tc_003_register"/>  
+			 <class name="com.opencart.testcases.tc_004_logout"/>   
+			 <class name="com.opencart.testcases.tc_005_searchProduct"/>  
+			 <class name="com.opencart.testcases.tc_006_productDescription"/>
+			 <class name="com.opencart.testcases.tc_007_addToCart"/>
+			
 		</classes>
 	</test>
 </suite>
